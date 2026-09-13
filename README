@@ -1,0 +1,48 @@
+# Mini RAG Project
+
+A simple Retrieval-Augmented Generation (RAG) project that demonstrates how documents can be converted into embeddings, stored as vectors, and searched using semantic similarity.
+
+## 📌 Project Overview
+
+This project implements the core retrieval part of a RAG pipeline using an AI notes PDF.
+
+The PDF is:
+1. Loaded and converted into text
+2. Split into smaller chunks
+3. Converted into vector embeddings
+4. Stored in ChromaDB
+5. Queried using semantic similarity
+6. Used to retrieve the most relevant text passages
+
+## ✨ Features
+
+- 📄 PDF document processing
+- ✂️ Text chunking with overlapping sections
+- 🧠 Sentence Transformer embeddings
+- 🔎 Semantic similarity search
+- 🗄️ ChromaDB vector database
+- 📊 Top-3 relevant results retrieval
+- 💻 Simple command-line interface
+
+## 🛠️ Technologies Used
+
+- Python
+- LangChain
+- Sentence Transformers
+- ChromaDB
+- PyPDF
+- NumPy
+
+## 📂 Project Structure
+
+```text
+mini-rag-project/
+│
+├── documents/
+│   └── ai_notes.pdf
+│
+├── app.py
+├── query.py
+├── requirements.txt
+├── .gitignore
+└── README.md
